@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1582667067,,"wq"
+|2,0,1583779233,,"wq"
 :q
 |2,0,1582665602,,"q"
 :w alt.py
@@ -41,38 +41,204 @@
 # Registers:
 
 # File marks:
-'0  91  0  ~/altright.py
-|4,48,91,0,1582667067,"~/altright.py"
-'1  88  140  ~/altright.py
-|4,49,88,140,1582666641,"~/altright.py"
-'2  88  140  ~/altright.py
-|4,50,88,140,1582666641,"~/altright.py"
-'3  32  0  ~/altright.py
-|4,51,32,0,1582665602,"~/altright.py"
-'4  32  0  ~/altright.py
-|4,52,32,0,1582665602,"~/altright.py"
-'5  32  0  ~/altright.py
-|4,53,32,0,1582665602,"~/altright.py"
-'6  32  0  ~/altright.py
-|4,54,32,0,1582665602,"~/altright.py"
-'7  1  17  ~/altright.py
-|4,55,1,17,1582478043,"~/altright.py"
-'8  1  17  ~/altright.py
-|4,56,1,17,1582478043,"~/altright.py"
-'9  1  17  ~/altright.py
-|4,57,1,17,1582478043,"~/altright.py"
+'0  1  0  ~/Alt_Right/root
+|4,48,1,0,1583779233,"~/Alt_Right/root"
+'1  45  28  ~/AR1.py
+|4,49,45,28,1583778997,"~/AR1.py"
+'2  1  0  ~/Alt_Right/alt.py
+|4,50,1,0,1583777867,"~/Alt_Right/alt.py"
+'3  38  0  ~/altright.py
+|4,51,38,0,1583777331,"~/altright.py"
+'4  91  0  ~/altright.py
+|4,52,91,0,1582667067,"~/altright.py"
+'5  91  0  ~/altright.py
+|4,53,91,0,1582667067,"~/altright.py"
+'6  88  140  ~/altright.py
+|4,54,88,140,1582666641,"~/altright.py"
+'7  88  140  ~/altright.py
+|4,55,88,140,1582666641,"~/altright.py"
+'8  88  140  ~/altright.py
+|4,56,88,140,1582666641,"~/altright.py"
+'9  88  140  ~/altright.py
+|4,57,88,140,1582666641,"~/altright.py"
 
 # Jumplist (newest first):
+-'  1  0  ~/Alt_Right/root
+|4,39,1,0,1583779233,"~/Alt_Right/root"
+-'  45  28  ~/AR1.py
+|4,39,45,28,1583778997,"~/AR1.py"
+-'  45  28  ~/AR1.py
+|4,39,45,28,1583778997,"~/AR1.py"
+-'  1  0  ~/AR1.py
+|4,39,1,0,1583778089,"~/AR1.py"
+-'  1  0  ~/AR1.py
+|4,39,1,0,1583778089,"~/AR1.py"
+-'  1  0  ~/Alt_Right/alt.py
+|4,39,1,0,1583777867,"~/Alt_Right/alt.py"
+-'  1  0  ~/Alt_Right/alt.py
+|4,39,1,0,1583777867,"~/Alt_Right/alt.py"
+-'  1  0  ~/Alt_Right/alt.py
+|4,39,1,0,1583777867,"~/Alt_Right/alt.py"
+-'  1  0  ~/Alt_Right/alt.py
+|4,39,1,0,1583777867,"~/Alt_Right/alt.py"
+-'  38  0  ~/altright.py
+|4,39,38,0,1583777331,"~/altright.py"
+-'  38  0  ~/altright.py
+|4,39,38,0,1583777331,"~/altright.py"
+-'  38  0  ~/altright.py
+|4,39,38,0,1583777331,"~/altright.py"
+-'  38  0  ~/altright.py
+|4,39,38,0,1583777331,"~/altright.py"
+-'  38  0  ~/altright.py
+|4,39,38,0,1583777331,"~/altright.py"
+-'  38  0  ~/altright.py
+|4,39,38,0,1583777331,"~/altright.py"
+-'  38  0  ~/altright.py
+|4,39,38,0,1583777331,"~/altright.py"
+-'  38  0  ~/altright.py
+|4,39,38,0,1583777331,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1583777293,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1583777293,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1583777293,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1583777293,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1583777293,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1583777293,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1583777293,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1583777293,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1582667067,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1582667067,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1582667067,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1582667067,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1582667067,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1582667067,"~/altright.py"
+-'  91  0  ~/altright.py
+|4,39,91,0,1582667067,"~/altright.py"
 -'  91  0  ~/altright.py
 |4,39,91,0,1582667067,"~/altright.py"
 -'  88  140  ~/altright.py
 |4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666839,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666641,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666641,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666641,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666641,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666641,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666641,"~/altright.py"
+-'  88  140  ~/altright.py
+|4,39,88,140,1582666641,"~/altright.py"
 -'  88  140  ~/altright.py
 |4,39,88,140,1582666641,"~/altright.py"
 -'  32  0  ~/altright.py
 |4,39,32,0,1582666280,"~/altright.py"
 -'  32  0  ~/altright.py
 |4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582666280,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582665602,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582665602,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582665602,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582665602,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582665602,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582665602,"~/altright.py"
+-'  32  0  ~/altright.py
+|4,39,32,0,1582665602,"~/altright.py"
 -'  32  0  ~/altright.py
 |4,39,32,0,1582665602,"~/altright.py"
 -'  1  17  ~/altright.py
@@ -82,144 +248,47 @@
 -'  1  17  ~/altright.py
 |4,39,1,17,1582665587,"~/altright.py"
 -'  1  17  ~/altright.py
-|4,39,1,17,1582478043,"~/altright.py"
+|4,39,1,17,1582665587,"~/altright.py"
 -'  1  17  ~/altright.py
-|4,39,1,17,1582478043,"~/altright.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  11  12  ~/alt.py
-|4,39,11,12,1582476891,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
--'  1  0  ~/alt.py
-|4,39,1,0,1582476716,"~/alt.py"
+|4,39,1,17,1582665587,"~/altright.py"
+-'  1  17  ~/altright.py
+|4,39,1,17,1582665587,"~/altright.py"
+-'  1  17  ~/altright.py
+|4,39,1,17,1582665587,"~/altright.py"
+-'  1  17  ~/altright.py
+|4,39,1,17,1582665587,"~/altright.py"
+-'  1  17  ~/altright.py
+|4,39,1,17,1582665587,"~/altright.py"
+-'  1  17  ~/altright.py
+|4,39,1,17,1582665587,"~/altright.py"
+-'  1  17  ~/altright.py
+|4,39,1,17,1582665587,"~/altright.py"
 
 # History of marks within files (newest to oldest):
 
+> ~/Alt_Right/root
+	*	1583779228	0
+	"	1	0
+
+> ~/AR1.py
+	*	1583778993	0
+	"	45	28
+	^	45	29
+	.	45	28
+	+	1	185
+	+	1	42
+	+	2	74
+	+	3	66
+	+	45	28
+
+> ~/Alt_Right/alt.py
+	*	1583777863	0
+	"	1	0
+
 > ~/altright.py
-	*	1582667065	0
-	"	91	0
-	^	91	0
+	*	1583777319	0
+	"	38	0
+	^	38	0
 	.	62	39
 	+	1	17
 	+	58	51
