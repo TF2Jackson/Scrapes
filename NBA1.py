@@ -15,28 +15,29 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 today = date.today()
 
-hashtags = ['@efjournal','#ClimateJustice','#DGR','#KeepItInTheGround','#ValveTurners']
+hashtags = ['@MarchMadness','@NBA','#NBAAllStar2020']
 
 while True:
-    with open(f'#Far_Left_{today}.csv','a') as fo:
+    with open(f'#NBA_{today}.csv', 'a') as fo:
         csvWriter = csv.writer(fo)
-        t = 0 
+        t = 0
         for i in hashtags:
-            for tweet in tweepy.Cursor(api.search, q=i, count=100000,  
-                    lang = "en", \
-                            ).items():
+            for tweet in tweepy.Cursor(api.search, q=i, count=100000, \
+                                    lang = "en", \
+                                    ).items():
 
                 tweet_dtg = str(tweet.created_at)
                 todays = str(today)
 
                 if todays in tweet_dtg:
-                    print(tweet.created_at, tweet.text, tweet.user.location)
                     analysis = TextBlob(tweet.text)
-                    print(analysis.sentiment_assessments)
                     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
 
                     t = t+1
 
                     if t >= 4000:
                         time.sleep(900.0)
-                        t = 0 
+                        t = 0
+
+
+
