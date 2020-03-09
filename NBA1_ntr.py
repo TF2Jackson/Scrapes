@@ -16,17 +16,17 @@ api = tweepy.API(auth)
 
 today = date.today()
 
-hashtags = ['#14Words','#Boogaloo','#ISaluteWhitePeople','#WhiteGenocide','@NewRightAmerica','@TRSPodcasts','#TCOT','#QAnon']
+hashtags = ['@MarchMadness','@NBA','#NBAAllStar2020']
 
 while True:
-    with open(f'#Alt_Right_NRT_{today}.csv', 'a') as fo:
+    with open(f'#NBA_NRT_{today}.csv', 'a') as fo:
         csvWriter = csv.writer(fo)
         t = 0
-        
+
         for i in hashtags:
             for tweet in tweepy.Cursor(api.search, q=i, count=100000, \
-                                            lang = "en",\
-                                            ).items():
+                                        lang = "en", \
+                                        ).items():
 
                 tweet_dtg = str(tweet.created_at)
                 todays = str(today)
@@ -42,8 +42,4 @@ while True:
                         if t >= 4000:
                             time.sleep(900.0)
                             t = 0
-
-
-
-
 
