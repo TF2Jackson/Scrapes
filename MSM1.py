@@ -18,7 +18,7 @@ today = date.today()
 hashtags = ['#Politics','#Election','#Economy']
 
 while True: 
-    with open(f'#Regular_Control_{today}.csv', 'a') as fo:
+    with open(f'Regular_Control_{today}.csv', 'a') as fo:
         csvWriter = csv.writer(fo)
         t = 0
         for i in hashtags:
@@ -32,6 +32,11 @@ while True:
                 if todays in tweet_dtg:
                     analysis = TextBlob(tweet.text)
                     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
+
+                    text = str(tweet.text)
+
+                    with open(f'Regular_Control_{today}.txt', 'a') as fo1:
+                        fo1.write(text)
 
                     t = t+1
 

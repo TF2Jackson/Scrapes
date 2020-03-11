@@ -38,6 +38,11 @@ while True:
                     print(analysis.sentiment_assessments)
                     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
 
+                    text = str(tweet.text)
+
+                    with open(f'#Alt_Right_{today}.txt', 'a') as fo1:
+                        fo1.write(text)
+
                     t = t + 1
 
                     if t >= 4000:
