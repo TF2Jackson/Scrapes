@@ -61,15 +61,15 @@ for i in sources:
             'height=', '14', 'src=', '//dgrnewsservice.org/wp-includes/images/rss.png', 'style=', \
             'border:0', 'width=', '14', '/', 'rsswidget', '//greenflame.libsyn.com/', 'Green', \
             'Flame', 'podcast', 'What', 'Is', 'Deep', 'Green', 'Resistance', '?', 'Links',"title=",\
-            'target=', '_blank','media-object', 'wp-post-image'
+            'target=', '_blank','media-object', 'wp-post-image',
             ]
                         
     stopwords.extend(newstpwrds)
 
-    with open(f'Print_FL_{today}.txt', 'a') as fo:
+    with open(f'DummyFL_{today}.txt', 'a') as fo:
         fo.write(text)
 
-    with open(f'Print_FL_{today}.txt','r',errors='ignore') as fo1:
+    with open(f'DummyFL_{today}.txt','r',errors='ignore') as fo1:
         csvWriter = csv.writer(fo)
         msm = fo1.readlines()
 
@@ -79,6 +79,7 @@ for i in sources:
         for word in tokenized_var:
             if not word in stopwords and "earthfirstjournal" not in word \
                     and "dgrnewsservice" not in word \
+                    and "''" not in word \
                     and "deepgreenresistance" not in word and "tab" not in word:
                 clean.append(str(word))
 
