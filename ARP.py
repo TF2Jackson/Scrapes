@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import nltk
-from nltk import FreqDist
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import datetime
@@ -10,37 +9,39 @@ import csv
 from textblob import TextBlob
 import time
 
-sources = ['https://www.radixjournal.com/',]
+sources = ['https://www.radixjournal.com/','https://www.amren.com/']
 
 for i in sources:
     page = requests.get(f'{i}')
     soup = BeautifulSoup(page.content, 'html.parser')
-    txt = (soup.find_all('p'))
-    text = str(txt)
+
+    if i == 'https://www.radixjournal.com/':
+        txt = (soup.find_all('p'))
+        text = str(txt)
+    else:
+        txt = (soup.find_all('a'))
+        text = str(txt)
 
     today = date.today()
 
     stopwords = nltk.corpus.stopwords.words('english')
     newstpwrds = ['.','I',';',"'s",',','--','The','the','a','an','and','<','>','p',\
-              'viewbox=','e1n8kpyg0','css-1pfq5u','class=','news','[',']','/p',\
-              '"','fff',"''",'d=','evenodd','fill-rule=','viewbox=','#','stroke=',\
-              '1l4.333', '5L1', '11', 'fill=','height=','get.', 'css-1qo9wc0', 'We', \
-              '', 'like', 'thoughts', 'New', 'York', 'Times', 'home', 'page', \
-              'experience.', 'href=', 'http', ':', '//nyt.qualtrics.com/jfe/form/SV_eFJmKj9v0krSE0l', \
-              'rel=','noopener', 'noreferrer', 'target=', '_blank', 'Let', 'us', 'know',\
-              'think', '/a', 'svg', '0', '0', '7', '12', 'width=', '7', 'path', 'M1', \
-              'none', 'stroke-width=', '2', '/path', '/svg','css-gs67ux','/info/disclaimer',\
-              'Reuters','Reuters.com','id=','``','newstipInfo','//thomsonreuters.com/','</p>', '</a>',\
-              '<p class="css-1pfq5u e1n8kpyg0">','"','<p class="css-gs67ux e1n8kpyg0">', \
-              '<path d="M1 1l4.333 5L1 11" fill="none" fill-rule="evenodd" stroke="#fff" stroke-width="2">', \
-              '</path>','</svg>']
+            '[', '','/p','', 'href=', "''", '#', '_3znysh7', "''", '[', '1',\
+            ']', '/a', '/p','/p', 'href=', "''", '#', '_30j0zll', "''", '[', \
+            '1', ']', '/a','href=', "''", '#', '_2et92p0', "''", '[', '2', ']',\
+            '/a','publications', '/i', 'href=','https','/em','(', 'AC', '', '59',\
+            '(', 'EH', ':', '3', ')','em','sup', 'class=', 'footnote', 'fn16', \
+            'id=', 'ffn16', '16', '/sup','(', 'Z', ':', '11', ')','script', \
+            'async=', 'charset=', 'utf-8', 'true', 'src=', '/script', 'Type', \
+            'field', 'hit', 'Enter/Return', 'search'
+            ]
 
     stopwords.extend(newstpwrds)
 
-    with open(f'Print_AR_{today}.txt', 'a') as fo:
+    with open(f'ARDummy_{today}.txt', 'a') as fo:
         fo.write(text)
 
-    with open(f'Print_AR_{today}.txt','r',errors='ignore') as fo1:
+    with open(f'ARDummy_{today}.txt','r',errors='ignore') as fo1:
         csvWriter = csv.writer(fo)
         msm = fo1.readlines()
 
@@ -48,11 +49,30 @@ for i in sources:
         clean = []
         tokenized_var = word_tokenize(i)
         for word in tokenized_var:
-            if not word in stopwords:
-                clean.append(str(word))
+            if not word in stopwords and "mediamatters" not in word \
+                    and "vanityfair" not in word \
+                    and "journal" not in word \
+                    and "''" not in word \
+                    and ".com" not in word \
+                    and "t.co" not in word \
+                    and "html" not in word \
+                    and 'gwh=' not in word \
+                    and "www" not in word:
+                        clean.append(str(word))
+
+    clean1 = str(clean)
+
+    with open(f'Print_AR_{today}.txt', 'a')  as fo2:
+        fo2.write(clean1)
 
     for i in clean:
-        with open(f'Print_AR_{today}.csv', 'a') as fo2:
-            csvWriter = csv.writer(fo2)
+        with open(f'Print_AR_{today}.csv', 'a') as fo3:
+            csvWriter = csv.writer(fo3)
             analysis = TextBlob(i)
-            csvWriter.writerow([i, analysis.polarity, analysis.subjectivity])  
+            csvWriter.writerow([i, analysis.polarity, analysis.subjectivity]) 
+
+
+
+
+
+
