@@ -12,9 +12,9 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1583964713,,"wq"
+|2,0,1583965571,,"wq"
 :q
-|2,0,1583960989,,"q"
+|2,0,1583965012,,"q"
 :qa!
 |2,0,1583779673,,"qa!"
 :w alt.py
@@ -46,34 +46,60 @@
 |3,1,36,0,1,0,1583779632,"9"
 
 # File marks:
-'0  43  42  ~/IS1_nrt.py
-|4,48,43,42,1583964713,"~/IS1_nrt.py"
-'1  1  0  ~/IS_nrt.py
-|4,49,1,0,1583964684,"~/IS_nrt.py"
-'2  66  78  ~/Print_FL.py
-|4,50,66,78,1583963951,"~/Print_FL.py"
-'3  13  24  ~/Print_MSM.py
-|4,51,13,24,1583963776,"~/Print_MSM.py"
-'4  13  43  ~/Print_AR.py
-|4,52,13,43,1583963762,"~/Print_AR.py"
-'5  29  23  ~/Print_FL.py
-|4,53,29,23,1583963733,"~/Print_FL.py"
-'6  29  23  ~/Print_FL.py
-|4,54,29,23,1583963733,"~/Print_FL.py"
-'7  58  78  ~/Print_AR.py
-|4,55,58,78,1583961413,"~/Print_AR.py"
-'8  58  78  ~/Print_AR.py
-|4,56,58,78,1583961413,"~/Print_AR.py"
-'9  43  24  ~/Print_MSM.py
-|4,57,43,24,1583961071,"~/Print_MSM.py"
+'0  53  0  ~/Print_MSM.py
+|4,48,53,0,1583965571,"~/Print_MSM.py"
+'1  2  42  ~/IS1_nrt.py
+|4,49,2,42,1583965012,"~/IS1_nrt.py"
+'2  43  42  ~/IS1_nrt.py
+|4,50,43,42,1583964713,"~/IS1_nrt.py"
+'3  43  42  ~/IS1_nrt.py
+|4,51,43,42,1583964713,"~/IS1_nrt.py"
+'4  1  0  ~/IS_nrt.py
+|4,52,1,0,1583964684,"~/IS_nrt.py"
+'5  66  78  ~/Print_FL.py
+|4,53,66,78,1583963951,"~/Print_FL.py"
+'6  13  24  ~/Print_MSM.py
+|4,54,13,24,1583963776,"~/Print_MSM.py"
+'7  13  24  ~/Print_MSM.py
+|4,55,13,24,1583963776,"~/Print_MSM.py"
+'8  13  43  ~/Print_AR.py
+|4,56,13,43,1583963762,"~/Print_AR.py"
+'9  29  23  ~/Print_FL.py
+|4,57,29,23,1583963733,"~/Print_FL.py"
 
 # Jumplist (newest first):
+-'  53  0  ~/Print_MSM.py
+|4,39,53,0,1583965571,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583965499,"~/Print_MSM.py"
+-'  2  42  ~/IS1_nrt.py
+|4,39,2,42,1583965012,"~/IS1_nrt.py"
+-'  2  42  ~/IS1_nrt.py
+|4,39,2,42,1583965012,"~/IS1_nrt.py"
+-'  43  42  ~/IS1_nrt.py
+|4,39,43,42,1583964978,"~/IS1_nrt.py"
+-'  43  42  ~/IS1_nrt.py
+|4,39,43,42,1583964978,"~/IS1_nrt.py"
+-'  43  42  ~/IS1_nrt.py
+|4,39,43,42,1583964713,"~/IS1_nrt.py"
 -'  43  42  ~/IS1_nrt.py
 |4,39,43,42,1583964713,"~/IS1_nrt.py"
 -'  1  0  ~/IS_nrt.py
 |4,39,1,0,1583964684,"~/IS_nrt.py"
 -'  1  0  ~/IS_nrt.py
 |4,39,1,0,1583964684,"~/IS_nrt.py"
+-'  1  0  ~/IS_nrt.py
+|4,39,1,0,1583964684,"~/IS_nrt.py"
+-'  1  0  ~/IS_nrt.py
+|4,39,1,0,1583964684,"~/IS_nrt.py"
+-'  1  0  ~/IS_nrt.py
+|4,39,1,0,1583964684,"~/IS_nrt.py"
+-'  1  0  ~/IS_nrt.py
+|4,39,1,0,1583964684,"~/IS_nrt.py"
+-'  1  0  ~/IS_nrt.py
+|4,39,1,0,1583964684,"~/IS_nrt.py"
+-'  1  0  ~/IS_nrt.py
+|4,39,1,0,1583964684,"~/IS_nrt.py"
 -'  66  78  ~/Print_FL.py
 |4,39,66,78,1583963951,"~/Print_FL.py"
 -'  66  78  ~/Print_FL.py
@@ -82,6 +108,54 @@
 |4,39,66,78,1583963951,"~/Print_FL.py"
 -'  66  78  ~/Print_FL.py
 |4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  66  78  ~/Print_FL.py
+|4,39,66,78,1583963951,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
+-'  29  23  ~/Print_FL.py
+|4,39,29,23,1583963784,"~/Print_FL.py"
 -'  29  23  ~/Print_FL.py
 |4,39,29,23,1583963784,"~/Print_FL.py"
 -'  29  23  ~/Print_FL.py
@@ -106,6 +180,22 @@
 |4,39,13,24,1583963776,"~/Print_MSM.py"
 -'  13  24  ~/Print_MSM.py
 |4,39,13,24,1583963776,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583963776,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583963776,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583963776,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583963776,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583963776,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583963776,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583963776,"~/Print_MSM.py"
+-'  13  24  ~/Print_MSM.py
+|4,39,13,24,1583963776,"~/Print_MSM.py"
 -'  43  24  ~/Print_MSM.py
 |4,39,43,24,1583963768,"~/Print_MSM.py"
 -'  43  24  ~/Print_MSM.py
@@ -122,6 +212,24 @@
 |4,39,43,24,1583963768,"~/Print_MSM.py"
 -'  43  24  ~/Print_MSM.py
 |4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
+-'  43  24  ~/Print_MSM.py
+|4,39,43,24,1583963768,"~/Print_MSM.py"
 -'  13  43  ~/Print_AR.py
 |4,39,13,43,1583963762,"~/Print_AR.py"
 -'  13  43  ~/Print_AR.py
@@ -154,126 +262,33 @@
 |4,39,13,43,1583963762,"~/Print_AR.py"
 -'  13  43  ~/Print_AR.py
 |4,39,13,43,1583963762,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583963751,"~/Print_AR.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  29  23  ~/Print_FL.py
-|4,39,29,23,1583963733,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  1  0  ~/Print_FL.py
-|4,39,1,0,1583963576,"~/Print_FL.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583961413,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583961413,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583961413,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583961413,"~/Print_AR.py"
--'  58  78  ~/Print_AR.py
-|4,39,58,78,1583961413,"~/Print_AR.py"
+-'  13  43  ~/Print_AR.py
+|4,39,13,43,1583963762,"~/Print_AR.py"
+-'  13  43  ~/Print_AR.py
+|4,39,13,43,1583963762,"~/Print_AR.py"
+-'  13  43  ~/Print_AR.py
+|4,39,13,43,1583963762,"~/Print_AR.py"
 
 # History of marks within files (newest to oldest):
 
+> ~/Print_MSM.py
+	*	1583965570	0
+	"	53	0
+	^	43	25
+	.	43	24
+	+	35	105
+	+	33	99
+	+	59	0
+	+	58	82
+	+	60	0
+	+	55	32
+	+	43	24
+	+	40	24
+	+	43	24
+
 > ~/IS1_nrt.py
-	*	1583964712	0
-	"	43	42
+	*	1583965011	0
+	"	2	42
 	^	43	43
 	.	43	42
 	+	22	52
@@ -296,21 +311,6 @@
 	+	29	24
 	+	29	23
 	+	66	78
-
-> ~/Print_MSM.py
-	*	1583963775	0
-	"	13	24
-	^	43	25
-	.	43	24
-	+	35	105
-	+	33	99
-	+	59	0
-	+	58	82
-	+	60	0
-	+	55	32
-	+	43	24
-	+	40	24
-	+	43	24
 
 > ~/Print_AR.py
 	*	1583963760	0
