@@ -87,6 +87,6 @@ for i in sources:
             csvWriter = csv.writer(fo2)
             analysis = TextBlob(i)
             csvWriter.writerow([i, analysis.polarity, analysis.subjectivity])  
-            
-
+        with open(f'Print_FL_{today}.txt', 'a') as fo3:
+            fo3.write(clean)
 
