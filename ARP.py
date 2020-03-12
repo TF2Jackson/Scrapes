@@ -33,7 +33,9 @@ for i in sources:
             '(', 'EH', ':', '3', ')','em','sup', 'class=', 'footnote', 'fn16', \
             'id=', 'ffn16', '16', '/sup','(', 'Z', ':', '11', ')','script', \
             'async=', 'charset=', 'utf-8', 'true', 'src=', '/script', 'Type', \
-            'field', 'hit', 'Enter/Return', 'search'
+            'field', 'hit', 'Enter/Return', 'search','story-body-text', \
+            'story-content', 'data-node-uid=', 'data-para-count=',\
+            'data-total-count=','@','dir=', 'ltr', 'lang=', 'en', ''
             ]
 
     stopwords.extend(newstpwrds)
