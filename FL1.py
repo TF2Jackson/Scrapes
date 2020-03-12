@@ -30,9 +30,7 @@ while True:
                 todays = str(today)
 
                 if todays in tweet_dtg:
-                    print(tweet.created_at, tweet.text, tweet.user.location)
                     analysis = TextBlob(tweet.text)
-                    print(analysis.sentiment_assessments)
                     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
                     
                     text = str(tweet.text)

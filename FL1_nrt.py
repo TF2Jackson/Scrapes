@@ -37,7 +37,7 @@ while True:
                         analysis = TextBlob(tweet.text)
                         csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
 
-                        text = str(tweet.txt)
+                        text = str(tweet.text)
 
                         with open(f'#Far_Left_NRT_{today}.txt', 'a') as fo1:
                             fo1.write(text)

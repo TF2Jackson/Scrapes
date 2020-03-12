@@ -13,7 +13,6 @@ import time
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_KEY_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
-
 today = date.today()
 
 hashtags = ['#14Words','#Boogaloo','#ISaluteWhitePeople','#WhiteGenocide','@NewRightAmerica','@TRSPodcasts','#TCOT','#QAnon']
@@ -22,7 +21,6 @@ while True:
     with open(f'#Alt_Right_NRT_{today}.csv', 'a') as fo:
         csvWriter = csv.writer(fo)
         t = 0
-        
         for i in hashtags:
             for tweet in tweepy.Cursor(api.search, q=i, count=100000, \
                                             lang = "en",\
@@ -37,7 +35,7 @@ while True:
                         analysis = TextBlob(tweet.text)
                         csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
 
-                        text = str(tweet.txt)
+                        text = str(tweet.text)
 
                         with open(f'#Alt_Right_NRT_{today}.txt', 'a') as fo1:
                             fo1.write(text)

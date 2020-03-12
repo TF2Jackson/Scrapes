@@ -15,36 +15,33 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 today = date.today()
 
-csvFile = open(f'#Islam_{today}.csv', 'a')
-csvWriter = csv.writer(csvFile)
-
 hashtags = ['#Baqiya','#Hadith','#Syria','#Yemen','#Saudi']
 
 while True:
-    t = 0
-    for i in hashtags:
-        for tweet in tweepy.Cursor(api.search, q=i, count=100000, \
+    with open(f'#Islam_{today}.csv', 'a') as fo:
+        csvWriter = csv.writer(fo)
+        t = 0
+        for i in hashtags:
+            for tweet in tweepy.Cursor(api.search, q=i, count=100000, \
                                     lang = "en" \
                                     ).items():
 
-            tweet_dtg = str(tweet.created_at)
-            todays = str(today)
+                tweet_dtg = str(tweet.created_at)
+                todays = str(today)
 
-            if todays in tweet_dtg:
-                print(tweet.created_at, tweet.text, tweet.user.location)
-                analysis = TextBlob(tweet.text)
-                print(analysis.sentiment_assessments)
-                csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
+                if todays in tweet_dtg:
+                    analysis = TextBlob(tweet.text)
+                    csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
 
-                text = str(tweet.txt)
+                    text = str(tweet.text)
 
-                with open(f'#Islam_{today}.txt', 'a') as fo1:
-                    fo1.write(text)
+                    with open(f'#Islam_{today}.txt', 'a') as fo1:
+                        fo1.write(text)
 
-                t = t+1
+                    t = t+1
 
-                if t > 5000:
+                    if t > 5000:
 
-                    time.sleep(900.0)
-                    t = 0 
+                        time.sleep(900.0)
+                        t = 0 
 

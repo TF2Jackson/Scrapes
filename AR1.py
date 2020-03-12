@@ -15,9 +15,6 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 today = date.today()
 
-csvFile = open(f'#Alt_Right_{today}.csv', 'a')
-csvWriter = csv.writer(csvFile)
-
 hashtags = ['#14Words','#Boogaloo','#ISaluteWhitePeople','#WhiteGenocide','@NewRightAmerica','@TRSPodcasts','#TCOT', '#QAnon']
 
 while True:
@@ -33,9 +30,7 @@ while True:
                 todays = str(today)
 
                 if todays in tweet_dtg:
-                    print(tweet.created_at, tweet.text, tweet.user.location)
                     analysis = TextBlob(tweet.text)
-                    print(analysis.sentiment_assessments)
                     csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8'), tweet.user.location, analysis.polarity, analysis.subjectivity])
 
                     text = str(tweet.text)
@@ -43,7 +38,7 @@ while True:
                     with open(f'#Alt_Right_{today}.txt', 'a') as fo1:
                         fo1.write(text)
 
-                    t = t + 1
+                    t = t+1
 
                     if t >= 4000:
                         time.sleep(900.0)
