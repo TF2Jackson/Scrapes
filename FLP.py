@@ -1,8 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import nltk
-nltk.download('punkt')
-from nltk import FreqDist
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import datetime
