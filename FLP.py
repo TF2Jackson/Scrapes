@@ -82,11 +82,15 @@ for i in sources:
                     and "deepgreenresistance" not in word and "tab" not in word:
                 clean.append(str(word))
 
+    clean1 = str(clean)
+
+    with open(f'Print_FL_{today}.txt', 'a')  as fo2:
+        fo2.write(clean1)
+
     for i in clean:
-        with open(f'Print_FL_{today}.csv', 'a') as fo2:
-            csvWriter = csv.writer(fo2)
+        with open(f'Print_FL_{today}.csv', 'a') as fo3:
+            csvWriter = csv.writer(fo3)
             analysis = TextBlob(i)
             csvWriter.writerow([i, analysis.polarity, analysis.subjectivity])  
-        with open(f'Print_FL_{today}.txt', 'a') as fo3:
-            fo3.write(clean)
+        
 
