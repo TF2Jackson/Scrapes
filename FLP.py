@@ -29,7 +29,19 @@ for i in sources:
     today = date.today()
 
     stopwords = nltk.corpus.stopwords.words('english')
-    newstpwrds = ['.','I',';',"'s",',','--']
+    newstpwrds = ['.','I',';',"'s",',','--','The','the','a','an','and','<','>','p',\
+            'viewbox=','e1n8kpyg0','css-1pfq5u','class=','news','[',']','/p',\
+            '"','fff',"''",'d=','evenodd','fill-rule=','viewbox=','#','stroke=',\
+            '1l4.333', '5L1', '11', 'fill=','height=','get.', 'css-1qo9wc0', 'We', \
+            '', 'like', 'thoughts', 'New', 'York', 'Times', 'home', 'page', \
+            'experience.', 'href=', 'http', ':', '//nyt.qualtrics.com/jfe/form/SV_eFJmKj9v0krSE0l', \
+            'rel=','noopener', 'noreferrer', 'target=', '_blank', 'Let', 'us', 'know',\
+            'think', '/a', 'svg', '0', '0', '7', '12', 'width=', '7', 'path', 'M1', \
+            'none', 'stroke-width=', '2', '/path', '/svg','css-gs67ux','/info/disclaimer',\
+            'Reuters','Reuters.com','id=','``','newstipInfo','//thomsonreuters.com/','</p>', '</a>',\
+            '<p class="css-1pfq5u e1n8kpyg0">','"','<p class="css-gs67ux e1n8kpyg0">', \
+            '<path d="M1 1l4.333 5L1 11" fill="none" fill-rule="evenodd" stroke="#fff" stroke-width="2">', \
+            '</path>','</svg>']
 
     stopwords.extend(newstpwrds)
 
