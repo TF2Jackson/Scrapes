@@ -1,7 +1,12 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[11]:
+
+
 import requests
 from bs4 import BeautifulSoup
 import nltk
-nltk.download('punkt')
 from nltk import FreqDist
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -16,7 +21,7 @@ sources = ['https://deepgreenresistance.org/en/','https://earthfirstjournal.org/
 for i in sources:
     page = requests.get(f'{i}')
     soup = BeautifulSoup(page.content, 'html.parser')
-
+    
     if i == 'https://deepgreenresistance.org/en/':
         txt = (soup.find_all('p'))
         text = str(txt)
@@ -26,24 +31,13 @@ for i in sources:
     else:
         txt = (soup.find_all('h1'))
         text = str(txt)
-
+                        
     today = date.today()
 
     stopwords = nltk.corpus.stopwords.words('english')
-    newstpwrds = ['.','I',';',"'s",',','--','The','the','a','an','and','<','>','p',\
-            'viewbox=','e1n8kpyg0','css-1pfq5u','class=','news','[',']','/p',\
-            '"','fff',"''",'d=','evenodd','fill-rule=','viewbox=','#','stroke=',\
-            '1l4.333', '5L1', '11', 'fill=','height=','get.', 'css-1qo9wc0', 'We', \
-            '', 'like', 'thoughts', 'New', 'York', 'Times', 'home', 'page', \
-            'experience.', 'href=', 'http', ':', '//nyt.qualtrics.com/jfe/form/SV_eFJmKj9v0krSE0l', \
-            'rel=','noopener', 'noreferrer', 'target=', '_blank', 'Let', 'us', 'know',\
-            'think', '/a', 'svg', '0', '0', '7', '12', 'width=', '7', 'path', 'M1', \
-            'none', 'stroke-width=', '2', '/path', '/svg','css-gs67ux','/info/disclaimer',\
-            'Reuters','Reuters.com','id=','``','newstipInfo','//thomsonreuters.com/','</p>', '</a>',\
-            '<p class="css-1pfq5u e1n8kpyg0">','"','<p class="css-gs67ux e1n8kpyg0">', \
-            '<path d="M1 1l4.333 5L1 11" fill="none" fill-rule="evenodd" stroke="#fff" stroke-width="2">', \
-            '</path>','</svg>']
-
+    newstpwrds = ['.','I',';',"'s",',','--','The','the','a','an','and','<','>','p',                  '/a','class=','accordion-toggle',"''",'data-parent=','#','main_nav',                  'data-toggle=','//earthfirstjournal.org/store/product/earth-first-journal-subscription/',                  'media-heading','//earthfirstjournal.org/newswire/2019/10/07/were-back/','href=','http',                  '/h5', '/p', '/a','media-heading', "''", 'Subscribe', '/h5','//armedwithvisions.com/',                  'main_nav', "''", 'data-toggle=', "''", 'collapse',"''", 'https', ':',                   '//greenflame.libsyn.com/rss', "''", 'img', 'alt=', "''", 'RSS', "''", 'class=', "''",                  'Pages', '/h1', 'h1', 'class=', "''", 'widget-title', "''", 'Archives', '/h1', 'h1',                   'class=', "''", 'widget-title','h5','//earthfirstjournal.org/favorite-blogs',                  '//earthfirstjournal.org/indigenous-rights-and-environmental-justice',                  'Favorite', 'Blogs','left=', 'no-repeat=', 'src=',                   '//earthfirstjournal.org/wp-content/themes/monkey-wrenched/images/newswire-tag.png',                  'top=', '/', 'pull-left','mailto', 'collective', '@', 'earthfirstjournal.org',                   'collective', 'earthfirstjournal.org', 'aria-current=', 'page', '//earthfirstjournal.org/',                  'Earth', 'First', '!', '//earthfirstjournal.org/about/', 'About', 'Earth', 'First', '!',                   '//earthfirstjournal.org/submissions/', 'Submissions', '//earthfirstjournal.org/contact/',                   'Contact', '//earthfirstjournal.org/donate/', 'Donate', 'mailto', 'collective', '@',                   'earthfirstjournal.org', 'collective', 'earthfirstjournal.org',                  '//app.e2ma.net/app2/audience/signup/1730470/1719566/', '?', 'v=a', 'Sign', ']', '[',                   'site-title', '//dgrnewsservice.org/', 'rel=', 'home', 'Deep', 'Green', 'Resistance',                   'News', 'Service', 'entry-title','rel=', 'bookmark','suwet', '’', 'en', 'First', 'Nation',                  'screen-reader-text', 'Posts', 'navigation', 'Search', '&', 'amp', 'Filter', 'DGR', 'updates',                  'Recent', 'Comments', 'Top', 'Posts', '&', 'amp', 'Feed', 'rsswidget', 'rss-widget-icon',                   'height=', '14', 'src=', '//dgrnewsservice.org/wp-includes/images/rss.png', 'style=',                   'border:0', 'width=', '14', '/', 'rsswidget', '//greenflame.libsyn.com/', 'Green',                   'Flame', 'podcast', 'What', 'Is', 'Deep', 'Green', 'Resistance', '?', 'Links',"title=",                  'target=', '_blank','media-object', 'wp-post-image'
+                ]
+                        
     stopwords.extend(newstpwrds)
 
     with open(f'Print_FL_{today}.txt', 'a') as fo:
@@ -57,7 +51,7 @@ for i in sources:
         clean = []
         tokenized_var = word_tokenize(i)
         for word in tokenized_var:
-            if not word in stopwords:
+            if not word in stopwords and "earthfirstjournal" not in word and "dgrnewsservice" not in word             and "deepgreenresistance" not in word and "tab" not in word:
                 clean.append(str(word))
 
     for i in clean:
@@ -65,6 +59,6 @@ for i in sources:
             csvWriter = csv.writer(fo2)
             analysis = TextBlob(i)
             csvWriter.writerow([i, analysis.polarity, analysis.subjectivity])  
-
-
+            
+print(clean)
 
