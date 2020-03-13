@@ -61,7 +61,7 @@ for i in sources:
             'height=', '14', 'src=', '//dgrnewsservice.org/wp-includes/images/rss.png', 'style=', \
             'border:0', 'width=', '14', '/', 'rsswidget', '//greenflame.libsyn.com/', 'Green', \
             'Flame', 'podcast', 'What', 'Is', 'Deep', 'Green', 'Resistance', '?', 'Links',"title=",\
-            'target=', '_blank','media-object', 'wp-post-image',
+            'target=', '_blank','media-object', 'wp-post-image','br'
             ]
                         
     stopwords.extend(newstpwrds)
@@ -84,9 +84,12 @@ for i in sources:
                 clean.append(str(word))
 
     clean1 = str(clean)
+    period = "."
+    add = [i for i in clean1 if i.isalpha() or i.isspace() or i in period]
+    add1 = "".join(add)
 
     with open(f'Print_FL_{today}.txt', 'a')  as fo2:
-        fo2.write(clean1)
+        fo2.write(add1)
 
     for i in clean:
         with open(f'Print_FL_{today}.csv', 'a') as fo3:
