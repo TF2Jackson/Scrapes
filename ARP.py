@@ -6,7 +6,6 @@ from nltk.corpus import stopwords
 import datetime
 from datetime import date
 import csv
-from textblob import TextBlob
 import time
 
 sources = ['https://www.radixjournal.com/','https://www.amren.com/']
@@ -57,10 +56,11 @@ for i in sources:
                     and "t.co" not in word \
                     and "html" not in word \
                     and 'gwh=' not in word \
-                    and "www" not in word: \
+                    and "www" not in word: 
                         clean.append(str(word))
 
     clean1 = str(clean)
+
     period = "."
     add = [i for i in clean1 if i.isalpha() or i.isspace() or i in period]
     add1 = "".join(add)
