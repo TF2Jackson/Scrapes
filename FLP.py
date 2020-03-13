@@ -66,10 +66,10 @@ for i in sources:
                         
     stopwords.extend(newstpwrds)
 
-    with open(f'DummyFL_{today}.txt', 'a') as fo:
+    with open(f'ZDummyFL_{today}.txt', 'a') as fo:
         fo.write(text)
 
-    with open(f'DummyFL_{today}.txt','r',errors='ignore') as fo1:
+    with open(f'ZDummyFL_{today}.txt','r',errors='ignore') as fo1:
         csvWriter = csv.writer(fo)
         msm = fo1.readlines()
 
