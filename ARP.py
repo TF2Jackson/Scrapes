@@ -42,7 +42,7 @@ for i in sources:
         fo.write(text)
 
     with open(f'ZARDummy_{today}.txt','r',errors='ignore') as fo1:
-        csvWriter = csv.writer(fo)
+        csvWriter = csv.writer(fo1)
         msm = fo1.readlines()
 
     for i in msm:
