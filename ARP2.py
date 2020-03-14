@@ -39,10 +39,10 @@ for i in sources:
 
     stopwords.extend(newstpwrds)
 
-    with open(f'ZAR2Dummy_{today}.txt', 'a') as fo:
+    with open(f'ZARDummy_{today}.txt', 'a') as fo:
         fo.write(text)
 
-    with open(f'ZAR2Dummy_{today}.txt', 'r', errors='ignore') as fo1:
+    with open(f'ZARDummy_{today}.txt', 'r', errors='ignore') as fo1:
         csvWriter = csv.writer(fo1)
         msm = fo1.readlines()
 
@@ -54,7 +54,8 @@ for i in sources:
                     and ".com" not in word and "<" not in word\
                     and "html" not in word and "storybody" not in word\
                     and "t.coe" not in word and "data" not in word\
-                    and "amp" not in word:
+                    and "amp" not in word and "www" not in word\
+                    and "gwh" not in word:
                 clean.append(str(word))
 
     clean1 = str(clean)
@@ -62,11 +63,11 @@ for i in sources:
     add = [i for i in clean1 if i.isalpha() or i.isspace() or i in period]
     add1 = "".join(add)
 
-    with open(f'Print_AR2_{today}.txt', 'a') as fo2:
+    with open(f'Print_AR_{today}.txt', 'a') as fo2:
         fo2.write(add1)
 
     for i in clean:
-        with open(f'Print_AR2_{today}.csv', 'a') as fo3:
+        with open(f'Print_AR_{today}.csv', 'a') as fo3:
             csvWriter = csv.writer(fo3)
             analysis = TextBlob(i)
             csvWriter.writerow([i, analysis.polarity, analysis.subjectivity])  
