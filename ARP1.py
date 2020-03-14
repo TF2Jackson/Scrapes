@@ -6,11 +6,13 @@ from nltk.corpus import stopwords
 import datetime
 from datetime import date
 import csv
+from textblob import TextBlob
 import time
 
 sources = ['https://www.radixjournal.com/','https://www.amren.com/']
 
 for i in sources:
+
     page = requests.get(f'{i}')
     soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -24,8 +26,8 @@ for i in sources:
     today = date.today()
 
     stopwords = nltk.corpus.stopwords.words('english')
-    newstpwrds = ['.','I',';',"'s",',','--','The','the','a','an','and','<','>','p',\
-            '[', '','/p','', 'href=', "''", '#', '_3znysh7', "''", '[', '1',\
+    newstpwrds = ['.','I',';',"'s",',','--','The','the','a','an','and','<','>','p', \
+            '[', '','/p','', 'href=', "''", '#', '_3znysh7', "''", '[', '1', \
             ']', '/a', '/p','/p', 'href=', "''", '#', '_30j0zll', "''", '[', \
             '1', ']', '/a','href=', "''", '#', '_2et92p0', "''", '[', '2', ']',\
             '/a','publications', '/i', 'href=','https','/em','(', 'AC', '', '59',\
@@ -33,7 +35,7 @@ for i in sources:
             'id=', 'ffn16', '16', '/sup','(', 'Z', ':', '11', ')','script', \
             'async=', 'charset=', 'utf-8', 'true', 'src=', '/script', 'Type', \
             'field', 'hit', 'Enter/Return', 'search'
-                 ]
+            ]
 
     stopwords.extend(newstpwrds)
 
@@ -50,26 +52,34 @@ for i in sources:
         for word in tokenized_var:
             if not word in stopwords and "mediamatters" not in word \
                     and "vanityfair" not in word \
-                    and "" not in word \
                     and "journal" not in word \
                     and ".com" not in word \
                     and "t.co" not in word \
                     and "html" not in word \
                     and 'gwh=' not in word \
                     and "www" not in word: 
-                clean.append(str(word))
+
+                        clean.append(str(word))
 
     clean1 = str(clean)
     period = "."
     add = [i for i in clean1 if i.isalpha() or i.isspace() or i in period]
     add1 = "".join(add)
 
-    with open(f'Print_AR_{today}.txt', 'a')  as fo2:
+    with open(f'Print_NBA_{today}.txt', 'a') as fo2:
         fo2.write(add1)
 
     for i in clean:
-        with open(f'Print_AR_{today}.csv', 'a') as fo3:
+        with open(f'Print_NBA_{today}.csv', 'a') as fo3:
             csvWriter = csv.writer(fo3)
             analysis = TextBlob(i)
-            csvWriter.writerow([i, analysis.polarity, analysis.subjectivity]) 
+            csvWriter.writerow([i, analysis.polarity, analysis.subjectivity])  
+
+
+
+
+
+
+
+
 
