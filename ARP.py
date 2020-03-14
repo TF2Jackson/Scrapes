@@ -33,7 +33,7 @@ for i in sources:
             'id=', 'ffn16', '16', '/sup','(', 'Z', ':', '11', ')','script', \
             'async=', 'charset=', 'utf-8', 'true', 'src=', '/script', 'Type', \
             'field', 'hit', 'Enter/Return', 'search'
-            ]
+                 ]
 
     stopwords.extend(newstpwrds)
 
@@ -57,10 +57,9 @@ for i in sources:
                     and "html" not in word \
                     and 'gwh=' not in word \
                     and "www" not in word: 
-                        clean.append(str(word))
+                clean.append(str(word))
 
     clean1 = str(clean)
-
     period = "."
     add = [i for i in clean1 if i.isalpha() or i.isspace() or i in period]
     add1 = "".join(add)
