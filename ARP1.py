@@ -42,7 +42,7 @@ for i in sources:
     with open(f'ZARDummy_{today}.txt', 'a') as fo:
         fo.write(text)
 
-    with open(f'ZARDummy_{today}.txt','r',errors='ignore') as fo1:
+    with open(f'ZARDummy_{today}.txt', 'r', errors='ignore') as fo1:
         csvWriter = csv.writer(fo1)
         msm = fo1.readlines()
 
@@ -59,18 +59,18 @@ for i in sources:
                     and 'gwh=' not in word \
                     and "www" not in word: 
 
-                        clean.append(str(word))
+            clean.append(str(word))
 
     clean1 = str(clean)
     period = "."
     add = [i for i in clean1 if i.isalpha() or i.isspace() or i in period]
     add1 = "".join(add)
 
-    with open(f'Print_NBA_{today}.txt', 'a') as fo2:
+    with open(f'Print_AR_{today}.txt', 'a') as fo2:
         fo2.write(add1)
 
     for i in clean:
-        with open(f'Print_NBA_{today}.csv', 'a') as fo3:
+        with open(f'Print_AR_{today}.csv', 'a') as fo3:
             csvWriter = csv.writer(fo3)
             analysis = TextBlob(i)
             csvWriter.writerow([i, analysis.polarity, analysis.subjectivity])  
