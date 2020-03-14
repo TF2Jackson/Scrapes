@@ -53,7 +53,8 @@ for i in sources:
             if not word in stopwords and "mediamatters" not in word\
                     and ".com" not in word and "<" not in word\
                     and "html" not in word and "storybody" not in word\
-                    and "t.coe" not in word and "data" not in word:
+                    and "t.coe" not in word and "data" not in word\
+                    and "amp" not in word:
                 clean.append(str(word))
 
     clean1 = str(clean)
